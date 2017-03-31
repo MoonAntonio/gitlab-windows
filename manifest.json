@@ -1,0 +1,30 @@
+{
+   "manifest_version": 2,
+
+   "name": "Gitlab Window",
+   "short_name": "Gitlab Windows",
+   "description": "App de chrome para gitlab",
+   "version": "1.0.0",
+   "icons": {
+      "16": "assets/gitlabx32.png",
+      "32": "assets/gitlabx64.png",
+      "128": "assets/gitlabx120.png"
+   },
+
+   "minimum_chrome_version": "40",
+   "permissions": [
+      "webview",
+      "storage",
+      "<all_urls>",
+      "contextMenus",
+      "notifications",
+      "unlimitedStorage",
+      "app.window.fullscreen.overrideEsc"
+   ],
+
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   }
+}
